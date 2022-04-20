@@ -1,0 +1,612 @@
+{
+	"info": {
+		"_postman_id": "b3f5e329-b2c8-4c38-9f0f-1f225791af27",
+		"name": "DA_User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dummyapi.io/data/v1/user",
+					"protocol": "https",
+					"host": [
+						"dummyapi",
+						"io"
+					],
+					"path": [
+						"data",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test limit 49",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dummyapi.io/data/v1/user?limit=49",
+					"protocol": "https",
+					"host": [
+						"dummyapi",
+						"io"
+					],
+					"path": [
+						"data",
+						"v1",
+						"user"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "49"
+						},
+						{
+							"key": "page ",
+							"value": "fdlkjsjfsjlsdjjs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test limit 49/page 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dummyapi.io/data/v1/user?limit=49&page=2",
+					"protocol": "https",
+					"host": [
+						"dummyapi",
+						"io"
+					],
+					"path": [
+						"data",
+						"v1",
+						"user"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "49"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test limit 50",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dummyapi.io/data/v1/user?limit=50",
+					"protocol": "https",
+					"host": [
+						"dummyapi",
+						"io"
+					],
+					"path": [
+						"data",
+						"v1",
+						"user"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "50"
+						},
+						{
+							"key": "page ",
+							"value": "fdlkjsjfsjlsdjjs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test user/id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{api}}/user/60d0fe4f5311236168a109ca",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"60d0fe4f5311236168a109ca"
+					],
+					"query": [
+						{
+							"key": "page ",
+							"value": "fdlkjsjfsjlsdjjs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/post",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"post"
+					],
+					"query": [
+						{
+							"key": "page ",
+							"value": "fdlkjsjfsjlsdjjs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET comment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/comment",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"comment"
+					],
+					"query": [
+						{
+							"key": "page ",
+							"value": "fdlkjsjfsjlsdjjs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test create User email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Sara\",\r\n    \"lastName\": \"Andersen\",\r\n    \"email\": \"sara.and23434443217ersen@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/user/create",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test create User firstName, email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Sara233244343\",\r\n    \"lastName\": \"Andersen\",\r\n    \"email\": \"sara.and23434443217ers5565en@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/user/create",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test create User firstName, lastName, email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Sara232\",\r\n    \"lastName\": \"Andersen32323\",\r\n    \"email\": \"sara.anersen22223@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/user/create",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test create User not valid title",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"fdslf;dslfldslf\",\r\n    \"firstName\": \"Sara\",\r\n    \"lastName\": \"Andersen\",\r\n    \"email\": \"sara.and23434443217ersen@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/user/create",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Update User lastName",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lastName\": \"Brown\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/user/60d0fe4f5311236168a109ca",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"60d0fe4f5311236168a109ca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Update User city LA",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"location\": {\r\n        \"street\": \"9614, SÃ¸ndermarksvej\",\r\n        \"city\": \"LA\",\r\n        \"state\": \"Nordjylland\",\r\n        \"country\": \"Denmark\",\r\n        \"timezone\": \"-9:00\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/user/60d0fe4f5311236168a109ca",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"60d0fe4f5311236168a109ca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Update User title donna",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"donna\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/user/60d0fe4f5311236168a109ca",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"60d0fe4f5311236168a109ca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Delete User by id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/user/60d0fe4f5311236168a109cb",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"60d0fe4f5311236168a109cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Delete User by id 6",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6242e931bf60ac643612d336",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/user/6",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "6242e931bf60ac643612d336",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "app-id",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api",
+			"value": "https://dummyapi.io/data/v1",
+			"type": "string"
+		}
+	]
+}
